@@ -1,0 +1,258 @@
+::-webkit-scrollbar 
+{
+    display: none;
+}
+.body
+{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    overflow-x: hidden; 
+}
+body, html
+{
+    width: 100%;
+    height: 100%;
+    background-color: #ebddd2;
+    font-family: 'Roboto', sans-serif;
+}
+*
+{
+    padding: 0;
+    margin: 0;
+}
+a
+{ 
+    font-size: 120%;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
+
+
+#menu
+{
+    top:0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: center;
+    background-color: white;
+    border-radius: 0 0 15px 15px; 
+    position: fixed;
+    z-index: 10;    
+}
+.titremenu 
+{
+    width: 13%;
+    height: 100%;
+    min-width: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 0 0 20px 20px; 
+    cursor: pointer;
+}
+.titremenu:hover
+{
+    transition: 0.2s; 
+    transform: scale(1.15);
+    color: #ebddd2;
+}
+#logo:hover 
+{
+    transition: 0.2s;
+    background-color: rgb(190, 162, 130);
+}
+#info
+{
+    transform: scaleY(1.15);
+}
+
+
+
+#main
+{
+    position: absolute;
+    top: 150px;
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+#main > div
+{
+    padding: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .2);
+}
+#texte
+{
+    width: auto;
+    min-width: 60%;
+    background-color: white;
+    height: auto;
+    text-align: justify;
+    margin-bottom: 70px;
+    padding-bottom: 40px;
+}
+
+
+.menu20
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: rgb(190, 162, 130);
+    display: none;
+}
+#menu2accueil
+{
+    display: block;
+}
+#menu2
+{
+    margin-top: 150px;
+    max-width: 100px;
+    min-width: 20%;
+    height: 400px;
+    background-color: rgb(190, 162, 130);
+    position: sticky;
+    top: 100px;
+    display: table;
+    text-align: center;
+}
+#tete
+{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+.titre
+{
+    text-align: center;
+    margin-top: 20px;
+}
+h3
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    font-size: 17px;
+    color: black;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+}
+h3:after 
+{    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.5s ease 0s, left 0.5s ease 0s;
+    width: 0;
+}
+h3:hover:after 
+{ 
+    width: 100%; 
+    left: 0; 
+}
+h3 > a 
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    font-size: 17px;
+    color: black;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+}
+h3 > a:hover
+{
+    transition: 0.5s;
+    color: #ebddd2;
+}
+
+#titreinfo
+{
+    font-weight: bolder;
+    width: 100%;
+    height: min-content;
+    margin-top: 40px;
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.titretexte
+{
+    height: min-content;
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-bottom: 40px;
+    padding-top: 100px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.titretexte::before
+{
+    content: "- ";
+}
+#carte
+{
+    width: 100%;
+    min-height: 300px;
+}
+.texteinfo
+{
+    font-size: 20px;
+    color: #d1b29b;
+    margin-right: 2%;
+    margin-left: 2%;
+    text-align: justify;
+}
+.titreinter
+{
+    margin-left: 8%;
+    margin-right: 2%;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #d1b29b;
+}
+#parking
+{
+    font-size: 20px;
+    color: #d1b29b;
+    margin-bottom: 70px;
+    text-align: justify;
+}
+#tarif
+{
+    width: 100%;
+
+}
+#tarif > img
+{
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+

@@ -1,0 +1,189 @@
+::-webkit-scrollbar 
+{
+    display: none;
+}
+.body
+{
+    -ms-overflow-style: none;  /* IE et Edge */
+    scrollbar-width: none;  /* Firefox */
+    overflow-x: hidden; 
+}
+body, html
+{
+    width: 100%;
+    height: 100%;
+    background-color: #ebddd2;
+    font-family: 'Roboto', sans-serif;
+}
+*
+{
+    padding: 0;
+    margin: 0;
+}
+a
+{ 
+    font-size: 120%;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+#main > div > div > p
+{
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+
+#menu
+{
+    top:0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: center;
+    background-color: white;
+    border-radius: 0 0 15px 15px; 
+    position: fixed;
+    z-index: 10;    
+}
+.titremenu 
+{
+    width: 13%;
+    height: 100%;
+    min-width: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 0 0 20px 20px; 
+    cursor: pointer;
+}
+.titremenu:hover
+{
+    transition: 0.2s; 
+    transform: scale(1.15);
+    color: #ebddd2;
+}
+#logo:hover 
+{
+    transition: 0.2s;
+    background-color: rgb(190, 162, 130);
+}
+#expo
+{
+    transform: scaleY(1.15);
+}
+
+
+#main
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: auto;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    left : 50%;
+    top: 130px;
+    transform: translate(-50%, 0);
+    box-sizing: border-box;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .2);
+    margin-bottom: 70px;
+}
+.expos
+{
+    padding: 20px;
+    display: flex;
+    text-align: left;
+    flex-wrap: nowrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    width: 90%;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .2);
+    background-color: rgb(190, 162, 130);
+}
+.expos:hover
+{
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+.expos > a > img
+{
+    border-radius: 10px;
+    height: 90%;
+    margin: 1%;
+}
+
+
+div.image
+{
+    width: 280px;
+    height: 150px;
+    background-size: 100% 100%;
+    border-radius: 5px;
+    float: left;
+    margin: 20px;
+    margin-right: 5%;
+    overflow: hidden;
+}
+#image1
+{
+    background: url(images/galerietemps.jpg);
+}
+#image2
+{
+    background: url(images/galerietempsm.jpg);
+}
+#image3
+{
+    background: url(images/galerietempstm.jpg);
+}
+.titreimage
+{
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+div.image > div
+{
+    background-color: black;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+div.image > div:hover
+{
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+.texteexpo
+{
+    display: flex;
+}
+
+.infoexpo
+{
+    margin: auto 5% auto 5%;
+    text-align: justify;
+}
+.t1
+{
+    text-transform: uppercase;
+    text-decoration: underline;
+}
